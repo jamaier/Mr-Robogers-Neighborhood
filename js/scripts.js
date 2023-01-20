@@ -18,16 +18,30 @@ function countNum(number) {
   return array;
 }
 
-function bolded(array, pElement) {
-  const bold = document.createElement("strong");
-  bold.innerHTML = element;
-  let text = ["Beep!", "Boop!", "Won't you be my neighbor?"];
-  array.forEach(function(element) {
-   if (text.includes(element)) {
-    pElement.appendChild(bold)
-   } else push(i)
-  });
+function bolded(str) {
+  const toBold = ["Beep!", "Boop!", "Won't you be my neighbor?"];
+  let words = str.split(" ");
+  let newStr = "";
+  for(let i = 0; i < words.length; i++) {
+    if (toBold.includes(words[i])) {
+      words[i] = `<strong>${toBold[i]}</strong>`;
+      newStr.push(i)
+    } else {
+      newStr.push(i)
+    }
+  }
+  return newStr;
 }
+
+// function bolded(text) {
+//   let words = text.split(" ");
+//   words.forEach(function(word, index) {
+//     if (word === "Beep!" || word === "Boop!" || word === "Won't you be my neighbor?") {
+//       words[index] = '<strong> ${words} </strong>';
+//     }
+//   });
+//   return words.join(" ");
+// }
 
 //UI Logic
 
@@ -36,13 +50,13 @@ function handleForm(event) {
   const userInput = document.getElementById("userInput").value;
   const output = document.getElementById("output");
   const pElement = document.createElement("p");
-  const count = countNum(userInput);
-  pElement.innerHTML = count.join(", ");
-  output.appendChild(pElement);
+  let count = countNum(userInput);
+  let str = count.join(", ");
+  pElement.innerHTML = bolded(str);
+  output.append(pElement);
 }
 
 window.addEventListener("load", function () {
   let form = document.getElementById("userForm");
   form.addEventListener("submit", handleForm);
-  bolded();
 });
