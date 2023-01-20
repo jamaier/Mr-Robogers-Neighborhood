@@ -13,6 +13,7 @@ body {
   flex-direction: column;
   align-items: center;
   border: 3px solid grey;
+  border-radius: 12px;
   margin: 50px;
 }
 
@@ -20,6 +21,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 3px solid grey;
+  border-radius: 12px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 25px;
 }
 
 #userForm {
@@ -27,4 +33,19 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+
+}
+
+#userInput {
+  width: 30vh;
+}
+
+.arrayOutput {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  contain: content;
+  border: 3px solid grey;
+  border-radius: 12px;
+  padding: 25px;
 }
