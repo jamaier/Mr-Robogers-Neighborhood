@@ -3,27 +3,33 @@
 function countNum(number) {
   let array = [];
   for(let i = 0; i <= number; i++) {
-      array.push(i);
+    let newStr = array.toString();
+    if (newStr.indexOf("1") !== -1) {
+    array.push("Beep!");
+    } else {
+    array.push(i);
+    }
   }
+  return array;
 }
 
-function splitNum(number) {
-  const arrayToString = number.toString().split("");
-  const splitArray = arrayToString.map(function(element) {
-    return parseInt(element)
-  })
-  return splitArray;
-}
-
-
+// function splitNum(number) {
+//   const arrayToString = number.toString().split("");
+//   const splitArray = arrayToString.map(function(element) {
+//     return parseInt(element)
+//   })
+//   return splitArray;
+// }
 
 // function convertNum(number) {
-
-//   if(number.includes(3)) {
+//   let splitArray = splitNum(number)
+//   if(splitArray.includes(3)) {
 //     return "Won't you be my neighbor?";
+//   } else if (splitArray.incudes(2)) {
+//     return 
 //   }
-//   console.log()
 // }
 
 
 //UI Logic
+

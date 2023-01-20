@@ -50,7 +50,27 @@ Code:
   }
 Expected Output: [0,1,2,3,4]
 
-Describe: splitNum()
+Describe: containOne()
+
+Test: "It should return an array of numbers based on the input and replace numbers with 1 in it to Beep!"
+Code:
+  function countNum(11) {
+    let array = [];
+    for(let i = 0; i <= number; i++) {
+      let newStr = array.toString();
+      if (newStr.indexOf("1") !== -1) {
+      array.push("Beep!");
+      } else {
+      array.push(i);
+      }
+    }
+    return array;
+  }
+Expected Output: [0,"Beep!",2,3,4,5,6,7,8,9,10,"Beep!"]
+
+
+
+<!-- Describe: splitNum()
 
 Test: "It should return an array of split numbers"
 Code:
@@ -63,7 +83,7 @@ Code:
   }
 Expected Output: [1,4]
 
-Describe: splitNum()
+Describe: convertNum()
 
 Test: "It should return an array of split numbers"
 Code:
@@ -74,5 +94,5 @@ Code:
     })
     return splitArray;
   }
-Expected Output: [1,4]
+Expected Output: [1,4] -->
 
