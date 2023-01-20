@@ -18,31 +18,6 @@ function countNum(number) {
   return array;
 }
 
-function bolded(str) {
-  const toBold = ["Beep!", "Boop!", "Won't you be my neighbor?"];
-  let words = str.split(" ");
-  let newStr = "";
-  for(let i = 0; i < words.length; i++) {
-    if (toBold.includes(words[i])) {
-      words[i] = `<strong>${toBold[i]}</strong>`;
-      newStr.push(i)
-    } else {
-      newStr.push(i)
-    }
-  }
-  return newStr;
-}
-
-// function bolded(text) {
-//   let words = text.split(" ");
-//   words.forEach(function(word, index) {
-//     if (word === "Beep!" || word === "Boop!" || word === "Won't you be my neighbor?") {
-//       words[index] = '<strong> ${words} </strong>';
-//     }
-//   });
-//   return words.join(" ");
-// }
-
 //UI Logic
 
 function handleForm(event) {
@@ -50,9 +25,8 @@ function handleForm(event) {
   const userInput = document.getElementById("userInput").value;
   const output = document.getElementById("output");
   const pElement = document.createElement("p");
-  let count = countNum(userInput);
-  let str = count.join(", ");
-  pElement.innerHTML = bolded(str);
+  const count = countNum(userInput);
+  pElement.append(count.join(", "));
   output.append(pElement);
 }
 
