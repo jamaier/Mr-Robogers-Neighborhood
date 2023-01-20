@@ -49,3 +49,30 @@ Code:
     }
   }
 Expected Output: [0,1,2,3,4]
+
+Describe: splitNum()
+
+Test: "It should return an array of split numbers"
+Code:
+  function splitNum(14) {
+    const arrayToString = number.toString().split("");
+    const splitArray = arrayToString.map(function(element) {
+      return parseInt(element)
+    })
+    return splitArray;
+  }
+Expected Output: [1,4]
+
+Describe: splitNum()
+
+Test: "It should return an array of split numbers"
+Code:
+  function splitNum(14) {
+    const arrayToString = number.toString().split("");
+    const splitArray = arrayToString.map(function(element) {
+      return parseInt(element)
+    })
+    return splitArray;
+  }
+Expected Output: [1,4]
+

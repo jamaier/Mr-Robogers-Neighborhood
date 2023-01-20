@@ -1,0 +1,9 @@
+Make business logic:
+
+ -make array from input.
+
+ - split numbers into other numbers to account for larger numbers
+
+  - convert the numbers that include 1,2,3 to respective terms and push to array.
+
+  
