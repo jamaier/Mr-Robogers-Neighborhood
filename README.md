@@ -1,37 +1,51 @@
-# _{Application Name}_
+# _Mr. Roboger's Neighborhood_
 
 #### By _Jacob Maier_
 
-#### _{Brief description of application}_
+#### _Webpage will take input and return an array based on the input._
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _JavaScript_
+* _HTML_
+* _CSS_
+* _GIT_
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This webpage will take a user inputed number and return an array altering certain numbers or numbers contained in a particular number._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone this repository to your local machine_
+* _navigate to the top level of the file_
+* _Open the Index.html file in your browser_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+
+__
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _N/A_
+
 
 ## License
 
 _MIT_
 
 Copyright (c) _2023_ _Jacob Maier_
+
+
+### TDD:
+
+Describe: containOne()
+
+Test: "It should return an array of numbers based on the input."
+Code:
+  function countNum(4) {
+    let array = []
+    for(let i = 0; i <= array; i++) {
+      array.push(i);
+    }
+  }
+Expected Output: [0,1,2,3,4]
