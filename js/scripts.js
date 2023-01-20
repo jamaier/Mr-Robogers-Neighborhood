@@ -8,9 +8,9 @@ function countNum(number) {
     if (newStr.indexOf("1") !== -1) {
     array.push("Beep!");
     } else if (newStr.indexOf("2") !== -1) {
-      array.push("Boop!")
+      array.push("Boop!");
     } else if (newStr.indexOf("3") !== -1) {
-      array.push("Wont you be my neighbor?")
+      array.push("Won't you be my neighbor?");
     }else {  
     array.push(i);
     }
@@ -22,16 +22,17 @@ function countNum(number) {
 
 function handleForm(event) {
   event.preventDefault();
-  const PElement = document.createElement("p")
-  const userInput = document.getElementById("userInput")
-  const output = document.getElementById("output") 
-  const count = countNum(userInput);
 
-  output.append(document.getElementById("output", PElement).appent(count(" ")))
+  const userInput = document.getElementById("userInput").value;
+  const output = document.getElementById("output");
+  const pElement = document.createElement("p");
+  const count = countNum(userInput);
+  pElement.innerHTML = count;
+  output.appendChild(pElement);
+  
 }
 
 window.addEventListener("load", function() {
-  let form = document.querySelector("userForm")
-  form.addEventListener("submit", handleForm)
-})
-
+  let form = document.getElementById("userForm");
+  form.addEventListener("submit", handleForm);
+});
