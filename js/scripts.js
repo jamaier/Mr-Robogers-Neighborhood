@@ -1,5 +1,6 @@
 //Business Logic
 
+//Changing numbers to the replaced string value of the text.
 function countNum(number) {
   let array = [];
   for(let i = 0; i <= number; i++) {
@@ -8,29 +9,14 @@ function countNum(number) {
     array.push("Beep!");
     } else if (newStr.indexOf("2") !== -1) {
       array.push("Boop!")
+    } else if (newStr.indexOf("3") !== -1) {
+      array.push("Wont you be my neighbor?")
     }else {  
     array.push(i);
     }
   }
   return array;
 }
-
-// function splitNum(number) {
-//   const arrayToString = number.toString().split("");
-//   const splitArray = arrayToString.map(function(element) {
-//     return parseInt(element)
-//   })
-//   return splitArray;
-// }
-
-// function convertNum(number) {
-//   let splitArray = splitNum(number)
-//   if(splitArray.includes(3)) {
-//     return "Won't you be my neighbor?";
-//   } else if (splitArray.incudes(2)) {
-//     return 
-//   }
-// }
 
 
 //UI Logic

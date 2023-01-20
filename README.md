@@ -68,9 +68,9 @@ Code:
   }
 Expected Output: [0,"Beep!",2,3,4,5,6,7,8,9,10,"Beep!"]
 
-Test: "It should return an array of numbers based on the input and replace numbers with 1 in it to Beep!"
+Test: "It should return an array of numbers based on the input and replace numbers with 1 and 2 with Beep! and Boop!"
 Code:
-  function countNum(number) {
+  function countNum(12) {
     let array = [];
     for(let i = 0; i <= number; i++) {
       let newStr = String(i);
@@ -86,31 +86,25 @@ Code:
   }
 Expected Output: [0,"Beep!","Boop!',3,4,5,6,7,8,9,10,"Beep!", "Boop!"]
 
-
-
-<!-- Describe: splitNum()
-
-Test: "It should return an array of split numbers"
+Test: "It should return an array of numbers based on the input and replace numbers with 1, 2 and 3 to "Beep!", "Boop!" and "Wont you be me neightbor?"."
 Code:
-  function splitNum(14) {
-    const arrayToString = number.toString().split("");
-    const splitArray = arrayToString.map(function(element) {
-      return parseInt(element)
-    })
-    return splitArray;
+  function countNum(13) {
+    let array = [];
+    for(let i = 0; i <= number; i++) {
+      let newStr = String(i);
+      if (newStr.indexOf("1") !== -1) {
+      array.push("Beep!");
+      } else if (newStr.indexOf("2") !== -1) {
+        array.push("Boop!")
+      } else if (newStr.indexOf("3") !== -1) {
+        array.push("Wont you be my neighbor?")
+      }else {  
+      array.push(i);
+      }
+    }
+    return array;
   }
-Expected Output: [1,4]
+Expected Output: [0,"Beep!","Boop!',"Wont you be me neightbor?",4,5,6,7,8,9,10,"Beep!", "Boop!", "Wont you be me neightbor?"]
 
-Describe: convertNum()
 
-Test: "It should return an array of split numbers"
-Code:
-  function splitNum(14) {
-    const arrayToString = number.toString().split("");
-    const splitArray = arrayToString.map(function(element) {
-      return parseInt(element)
-    })
-    return splitArray;
-  }
-Expected Output: [1,4] -->
 
