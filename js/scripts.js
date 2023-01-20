@@ -20,15 +20,18 @@ function countNum(number) {
 
 //UI Logic
 
-function handleForm() {
-  let count = countNum("div#output");
-  document.getElementById("userForm");
+function handleForm(event) {
+  event.preventDefault();
+  const userInput = document.getElementById("userInput")
+  const output = document.getElementById("output") 
+  const count = countNum(userInput);
+
+  output.append(document.getElementsByTagName("p"))(count(""))
+
 
 }
 
-window.addEventListener("load", function(event) {
-  event.preventDefault();
-
+window.addEventListener("load", function() {
   document.addEventListener("submit", handleForm)
 })
 
