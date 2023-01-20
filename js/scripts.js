@@ -3,7 +3,7 @@
 function countNum(number) {
   let array = [];
   for(let i = 0; i <= number; i++) {
-    let newStr = array.toString();
+    let newStr = String(i);
     if (newStr.indexOf("1") !== -1) {
     array.push("Beep!");
     } else {
