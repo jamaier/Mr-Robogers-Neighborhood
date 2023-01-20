@@ -20,5 +20,15 @@ function countNum(number) {
 
 //UI Logic
 
+function handleForm() {
+  let count = countNum("div#output");
+  document.getElementById("userForm");
 
+}
+
+window.addEventListener("load", function(event) {
+  event.preventDefault();
+
+  document.addEventListener("submit", handleForm)
+})
 
