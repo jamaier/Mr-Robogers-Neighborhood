@@ -18,16 +18,17 @@ function countNum(number) {
   return array;
 }
 
-function bolded(countNum) {
+function bolded(array, pElement) {
   const bold = document.createElement("strong");
-  const pElement = document.getElementById("output");
-  let text = ["Beep!", "Boop!", "Won't you be my neighbor?"]
-  for (let i = 0; i = element; i++) {
-    if (element === text){
-      return bold.append(pElement)
-    }
-  } 
+  bold.innerHTML = element;
+  let text = ["Beep!", "Boop!", "Won't you be my neighbor?"];
+  array.forEach(function(element) {
+   if (text.includes(element)) {
+    pElement.appendChild(bold)
+   } else push(i)
+  });
 }
+
 //UI Logic
 
 function handleForm(event) {
