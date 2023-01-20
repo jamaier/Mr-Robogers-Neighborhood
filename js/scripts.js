@@ -6,7 +6,9 @@ function countNum(number) {
     let newStr = String(i);
     if (newStr.indexOf("1") !== -1) {
     array.push("Beep!");
-    } else {
+    } else if (newStr.indexOf("2") !== -1) {
+      array.push("Boop!")
+    }else {  
     array.push(i);
     }
   }

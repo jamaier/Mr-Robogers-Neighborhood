@@ -68,6 +68,24 @@ Code:
   }
 Expected Output: [0,"Beep!",2,3,4,5,6,7,8,9,10,"Beep!"]
 
+Test: "It should return an array of numbers based on the input and replace numbers with 1 in it to Beep!"
+Code:
+  function countNum(number) {
+    let array = [];
+    for(let i = 0; i <= number; i++) {
+      let newStr = String(i);
+      if (newStr.indexOf("1") !== -1) {
+      array.push("Beep!");
+      } else if (newStr.indexOf("2") !== -2) {
+        array.push("Boop!")
+      }else {  
+      array.push(i);
+      }
+    }
+    return array;
+  }
+Expected Output: [0,"Beep!","Boop!',3,4,5,6,7,8,9,10,"Beep!", "Boop!"]
+
 
 
 <!-- Describe: splitNum()
