@@ -22,16 +22,16 @@ function countNum(number) {
 
 function handleForm(event) {
   event.preventDefault();
+  const PElement = document.createElement("p")
   const userInput = document.getElementById("userInput")
   const output = document.getElementById("output") 
   const count = countNum(userInput);
 
-  output.append(document.getElementsByTagName("p"))(count(""))
-
-
+  output.append(document.getElementById("output", PElement).appent(count(" ")))
 }
 
 window.addEventListener("load", function() {
-  document.addEventListener("submit", handleForm)
+  let form = document.querySelector("userForm")
+  form.addEventListener("submit", handleForm)
 })
 
