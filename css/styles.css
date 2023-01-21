@@ -37,13 +37,17 @@ body {
 }
 
 #userInput {
+  display: flex;
   width: 30vh;
 }
 
 .arrayOutput {
+  font-weight: 900;
   margin: 50px;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   contain: content;
   border: 3px solid grey;
   border-radius: 12px;

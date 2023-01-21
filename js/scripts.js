@@ -29,7 +29,13 @@ function handleForm(event) {
   hideOldResults();
   const userInput = document.getElementById("userInput").value;
   const output = document.getElementById("output");
+  const h5 = document.createElement("h5");
+  const h4 = document.createElement("h4");
   let count = countNum(userInput);
+  h5.innerText = "Mr. Roboger says:";
+  h4.innerText = "Hi! Won't yo...";
+  output.append(h5);
+  output.append(h4);
   output.append(count.join(", "));
 }
 
