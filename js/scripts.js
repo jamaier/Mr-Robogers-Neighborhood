@@ -18,16 +18,19 @@ function countNum(number) {
   return array;
 }
 
+function hideOldResults() {
+  const output = document.getElementById("output");
+  output.innerHTML = "";
+}
 //UI Logic
 
 function handleForm(event) {
   event.preventDefault();
+  hideOldResults();
   const userInput = document.getElementById("userInput").value;
   const output = document.getElementById("output");
-  const pElement = document.createElement("p");
-  const count = countNum(userInput);
-  pElement.append(count.join(", "));
-  output.append(pElement);
+  let count = countNum(userInput);
+  output.append(count.join(", "));
 }
 
 window.addEventListener("load", function () {
