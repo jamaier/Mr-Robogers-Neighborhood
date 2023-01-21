@@ -38,7 +38,7 @@ Copyright (c) _2023_ _Jacob Maier_
 
 ### TDD:
 
-Describe: containOne()
+Describe: countNum()
 
 Test: "It should return an array of numbers based on the input."
 Code:
@@ -48,9 +48,10 @@ Code:
       array.push(i);
     }
   }
+
 Expected Output: [0,1,2,3,4]
 
-Describe: containOne()
+Describe: countNum()
 
 Test: "It should return an array of numbers based on the input and replace numbers with 1 in it to Beep!"
 Code:
@@ -66,6 +67,7 @@ Code:
     }
     return array;
   }
+
 Expected Output: [0,"Beep!",2,3,4,5,6,7,8,9,10,"Beep!"]
 
 Test: "It should return an array of numbers based on the input and replace numbers with 1 and 2 with Beep! and Boop!"
@@ -84,6 +86,7 @@ Code:
     }
     return array;
   }
+
 Expected Output: [0,"Beep!","Boop!',3,4,5,6,7,8,9,10,"Beep!", "Boop!"]
 
 Test: "It should return an array of numbers based on the input and replace numbers with 1, 2 and 3 to "Beep!", "Boop!" and "Wont you be me neightbor?"."
@@ -104,6 +107,7 @@ Code:
     }
     return array;
   }
+
 Expected Output: [0,"Beep!","Boop!',"Wont you be me neightbor?",4,5,6,7,8,9,10,"Beep!", "Boop!", "Wont you be me neightbor?"]
 
 
